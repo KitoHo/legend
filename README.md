@@ -6,6 +6,7 @@
 
 Legend is a **Hook framework** for **Android Development**, it allows you to Hook Java methods **without** ROOT. Even more exciting is that it supports both **Dalvik and Art** environment!
 
+<https://github.com/asLody/legend>
 
 ### 1. What is the good
 - Programming more **efficient**
@@ -39,10 +40,12 @@ public static void Activity_startActivity(Activity thiz, Intent intent) {
 ```
 #### Notice:
 - Write the following code down in where you want to your hooks **enable**.
+
 ```java
 HookManager.getDefault().applyHooks(YourClass.class);
 ```
 - You can also hook a method **without annotation**.
+
 ```java
 HookManager.getDefault().hookMethod(originMethod, hookMethod);
 ```
